@@ -20,7 +20,7 @@
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
     /* WORK HERE */
-    NSString *nameWithoutCheese = cheeseName;
+    NSString *nameWithoutSuffix = cheeseName;
     if ([cheeseName hasSuffix:@" cheese"])
     {
     NSRange cheeseRange = [cheeseName rangeOfString:@" cheese"
