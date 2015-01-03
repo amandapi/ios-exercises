@@ -38,8 +38,8 @@
         return [NSString stringWithFormat:@"1 cheese"];
     } else {
         /* WORK HERE, ASSUMING THERE ARE 2+ CHEESES */
-        NSString *cheeseString = [NSString stringWithFormat:@"cheeses"];
-        return [NSString stringWithFormat:@"%ld %@", (long)cheeseCount , cheeseString];
+       // NSString *cheeseString = [NSString stringWithFormat:@"cheeses"];
+        return [NSString stringWithFormat:@"%ld cheeses", (long)cheeseCount];
     }
     
     /*
