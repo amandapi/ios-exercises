@@ -20,18 +20,24 @@
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
     /* WORK HERE */
-    NSString *nameWithoutSuffix = cheeseName;
-    if ([cheeseName hasSuffix:@" cheese"])
-    {
-    NSRange cheeseRange = [cheeseName rangeOfString:@" cheese"
-                           options:NSCaseInsensitiveSearch];
-    NSString *nameWithoutSuffix = [cheeseName stringByReplacingCharactersInRange:cheeseRange withString:@""];
-        return (nameWithoutSuffix);
-    }
-        else {return (cheeseName);
-        }}
+    
+    
+   return  [cheeseName stringByReplacingOccurrencesOfString: @" cheese" withString:@""  options:NSCaseInsensitiveSearch range:NSMakeRange(0, [cheeseName length])];
 
     
+    //NSString *nameWithoutSuffix = cheeseName;
+    //if ([cheeseName hasSuffix:@" cheese" ])
+    //{
+    //NSRange cheeseRange = [cheeseName rangeOfString:@" cheese"
+    //                       options:NSCaseInsensitiveSearch];
+    //NSString *nameWithoutSuffix = [cheeseName //stringByReplacingCharactersInRange:cheeseRange withString:@""];
+    //    return (nameWithoutSuffix);
+    //}
+    //    else {return (cheeseName);
+    //    }
+}
+
+
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     if (cheeseCount == 1) {
         /* WORK HERE, ASSUMING THERE IS 1 CHEESE */
