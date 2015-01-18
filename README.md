@@ -1,4 +1,4 @@
-ios-exercises
+Bloc ios-exercises from checkpoints 1 to 17.
 =============
 
 - `BlocExercises.xcodeproj` contains the Xcode project with iOS exercises.
